@@ -60,9 +60,10 @@
     "*": "prettier -u --write"
   },
   "dependencies": {
+    "@elysiajs/cors": "^1.2.0",
     "@elysiajs/swagger": "^1.0.5",
     "elysia": "^1.0.25",
-    "viem": "^2.16.3",
-    "kysely-bun-sqlite": "^0.3.2"
+    "kysely-bun-sqlite": "^0.3.2",
+    "viem": "^2.16.3"
   }
 }

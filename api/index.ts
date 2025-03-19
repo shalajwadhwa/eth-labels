@@ -1,3 +1,4 @@
+import { cors } from "@elysiajs/cors";
 import { swagger } from "@elysiajs/swagger";
 import { Elysia, t } from "elysia";
 import type {
@@ -13,6 +14,8 @@ import {
 
 const PORT = process.env.PORT || 3000;
 export const app = new Elysia();
+
+app.use(cors());
 
 app.use(
   swagger({
